@@ -6,16 +6,11 @@ if(!defined('__DIR__') )
   define('__DIR__',dirname(__FILE__)) ;
 }
 session_start();
-/*
- maccms后台部分提示消息空白（登陆成功 更新缓存等）
- 
- 根据url规则缓存功能 以及强制删除缓存功能
-*/
 
 $configSites= array
 (
-    "kkdy.free.wtbidccdn50.cn"=>array('target_url'=>'https://bmh.one',0),
-	"kkdy2.free.wtbidccdn50.cn"=>array('target_url'=>'https://bmh.one',0)
+    "joyanhui.cn"=>array('target_url'=>'https://leiyanhui.com',0),
+    "joyanhui2.cn"=>array('target_url'=>'https://leiyanhui2.com',0)
 );
 //https和http
 $user_url_protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://": "http://";
